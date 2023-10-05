@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.chat-header {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.chat-messages {
+    width: 500;
+    height: 346px;
+
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+
+}
+
+.chat-messages img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+    margin: 46px auto 0;
+
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reset-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#user-input-text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+    color: red;
+}
+
+
+#send-button:hover {
+    background-color: #0056b3;
+    /* Cambio di colore al passaggio del mouse */
+}
+
+/* Stile di base per la clessidra */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+    /* Animazione di rotazione */
+    animation: spin 2s linear infinite;
+
+    margin: 145px auto 0;
+  
+}
+
+/* Animazione di rotazione */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
