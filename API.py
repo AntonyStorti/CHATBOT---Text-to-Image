@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 # Setta l'API di OpenAI come variabile globale: usabile in ogni script
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "***"
 
 
 # Recupera la variabile passata come argomento dalla riga di comando
